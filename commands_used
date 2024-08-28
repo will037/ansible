@@ -5,4 +5,3 @@ alias ssha='ssh -p 22 -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+s
 
 ssh-keygen -t ed25519 -C " ansible default"
 
-git remote set-url origin git@github.com:will037/esp-idf.git
