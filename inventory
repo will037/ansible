@@ -5,7 +5,7 @@ routers
 switches
 
 [routers]
-R11 
+R1
 R2
 R3
 R4
