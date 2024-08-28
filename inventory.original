@@ -1,0 +1,15 @@
+[ios]
+
+[ios:children]
+routers
+switches
+
+[routers]
+R1
+R2
+R3
+R4
+CSR1
+
+[switches] 
+192.168.11.1
