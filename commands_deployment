@@ -1,0 +1,32 @@
+ssh -o "KexAlgorithms diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1" will@192.168.11.1
+ssh -p 22 -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -o" KexAlgorithms diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1"  will@192.168.11.1
+
+alias ssha='ssh -p 22 -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedKeyTypes=+ssh-rsa -o" KexAlgorithms diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1"'
+
+#Generate ssh key-pair 
+ssh-keygen -t ed25519 -C " ansible default"
+
+#test key
+ssh -T git@github.com
+
+#Git
+git clone git@github.com:will037/ansible.git
+
+#enable bash functions
+source mycommands.sh
+3
+git add .
+warning: adding embedded git repository: ansible
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> ansible
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached ansible
+hint: 
+hint: See "git help submodule" for more information.
